@@ -1,7 +1,7 @@
 # remotor
  drive motors and servos from an rc reciever with arduino and raspberry pi with adafruit CRICKIT HAT.
 
-Tested on an Arduino Uno, Raspberry pi 3b running raspberry pi OS lite, with an adafruit CRICKIT HAT.
+Tested on an Arduino Uno, Raspberry pi 3b running raspberry pi OS lite, with an adafruit CRICKIT HAT, flysky fs-gr3e reciever and flysky fs-gt3b radio.
 
 WIP, not fully functional.
 
@@ -10,9 +10,19 @@ python ./forever.py remotor0_21.py
 
 This code is very poorly made :)
 
+Connection information:
 
-Bugs
+CH 1 signal -----> pin 11 arduino
+CH 2 signal -----> pin 10 arduino
+reviever Vcc ----> 5v on arduino
+reviever GND ----> GND on arduino
 
-remotor.py does not start reliably, assuming because the arduino starts communicating as soon as its powered on. Add bidirectional serial communication. Initiate the arduino code via serial. --- FIXED-ish worked around the problem by adding forever.py which restarts the code when an error occurs.
+arduino RESET ----> drive 1 on CRICKET HAT (not currently being used)
+
+Arduino -----> raspsberry pi 3b via USB (im assuming you can use the UART GPIOs on the pi too)
+
+Motors 1 & 2 -----> motor 1 & 2 outputs on CRICKET HAT
+
+
 
 
