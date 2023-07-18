@@ -8,6 +8,7 @@ WIP, not fully functional.
 start the program with 
 python ./forever.py remotor0_21.py
 
+This code is very poorly made :)
 
 
 Bugs
