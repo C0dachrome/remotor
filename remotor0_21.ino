@@ -1,12 +1,18 @@
 int baseline = 1489;
+
 const int CH1 = 11;
 const int CH2 = 10;
+
+
+
+
 void setup() {
-  Serial.begin(9600);
-  
+  Serial.begin(115200);
+  delay(2000);
 }
 
 void loop() {
+   
    float y = pulseIn(CH2, HIGH, 30000);
    float x = pulseIn(CH1, HIGH, 30000);
   
