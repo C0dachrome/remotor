@@ -33,6 +33,6 @@ void loop() {
   }
 
   
-   Serial.println(String(((x*pow(10,-4))*3)-0.45));
+   Serial.println(String(((x*pow(10,-4))*3)-0.45)); // turns the garbage from the reciever into something the CRICKIT HAT can use.
    Serial.println(String(((y*pow(10,-4))*3)-0.45));
   }
